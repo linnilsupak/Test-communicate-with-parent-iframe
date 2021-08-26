@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'testing-iframe';
+
+  sendDataToParent() {
+    window.parent.postMessage({ "for": "personality-test", "data": "this is a child iframe" }, '*')
+  }
 }
