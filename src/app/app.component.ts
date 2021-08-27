@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'testing-iframe';
 
   sendDataToParent() {
-    window.parent.postMessage({ "for": "personality-test", "data": "this is a child iframe" }, '*')
+    window.parent.postMessage({ "for": "personality-test", "result": "ENFJ" }, '*')
   }
 }
