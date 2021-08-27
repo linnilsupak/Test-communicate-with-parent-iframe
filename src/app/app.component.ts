@@ -9,6 +9,6 @@ export class AppComponent {
   title = 'testing-iframe';
 
   sendDataToParent() {
-    window.parent.postMessage({ "for": "personality-test", "result": "ENFJ" }, 'https://d3sszcef96eum9.cloudfront.net')
+    window.parent.postMessage({ "for": "personality-test", "result": "ENFJ" }, 'http://localhost:4200')
   }
 }
